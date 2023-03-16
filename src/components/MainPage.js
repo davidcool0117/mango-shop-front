@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./MainPage.css";
 import axios from "axios";
 import dayjs from 'dayjs';
@@ -34,6 +35,7 @@ const MainPage = () => {
                                     <div className="product-content">
                                         <span className="product-name">{product.name}</span>
                                         <span className="product-price">{product.price}</span>
+<<<<<<< HEAD
                                         <div className="product-footer">
                                             <span className="product-seller">
                                                 <img src="images/icons/avatar.png" alt="product-seller" className="product-avatar" />
@@ -41,6 +43,12 @@ const MainPage = () => {
                                             </span>
                                                 <span className="product-date">{dayjs(product.createdAt).format('YYYY/MM/DD')}</span>
                                         </div>
+=======
+                                        <span className="product-seller">
+                                            <img src="images/icons/avatar.png" alt="product-seller" className="product-avatar" />
+                                            <span>{product.seller}</span>
+                                        </span>
+>>>>>>> 018f74b2736f3fedf0f03201a9969e55e0104561
                                     </div>
                                 </Link>
                             </div>
