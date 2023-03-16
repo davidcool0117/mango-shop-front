@@ -63,20 +63,23 @@
 #name {
   font-size: 22px;
   font-weight: 600;
+  padding: 3px;
 }
 
 #price {
   font-size: 18px;
   font-weight: 600;
-  
+  padding: 3px;
 }
 
-#createAt {
-  font-size: 12px;
-  color: rgb(204, 204, 204);
+#createdAt {
+  font-size: 14px;
+  color: rgb(78, 78, 78);
+  padding: 3px;
 }
 
 #description {
   margin-top: 16px;
   font-weight: bold;
+  padding: 3px;
 }

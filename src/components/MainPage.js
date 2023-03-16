@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import "./MainPage.css";
 import axios from "axios";
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+dayjs.extend(relativeTime);
 
 const MainPage = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        let url = "https://e20fed74-baa5-45c0-8f03-17b0b3272edd.mock.pstmn.io/products/";
+        let url = "http://localhost:8080/products";
         axios
             .get(url)
             .then((result) => {
@@ -31,10 +34,13 @@ const MainPage = () => {
                                     <div className="product-content">
                                         <span className="product-name">{product.name}</span>
                                         <span className="product-price">{product.price}</span>
-                                        <span className="product-seller">
-                                            <img src="images/icons/avatar.png" alt="product-seller" className="product-avatar" />
-                                            <span>{product.seller}</span>
-                                        </span>
+                                        <div className="product-footer">
+                                            <span className="product-seller">
+                                                <img src="images/icons/avatar.png" alt="product-seller" className="product-avatar" />
+                                                <span>{product.seller}</span>
+                                            </span>
+                                                <span className="product-date">{dayjs(product.createdAt).format('YYYY/MM/DD')}</span>
+                                        </div>
                                     </div>
                                 </Link>
                             </div>

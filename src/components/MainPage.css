@@ -85,20 +85,34 @@ a {
 
 .product-name {
     font-size: 14px;
+    padding: 2px 0;
 }
 
 .product-price {
     font-size: 16px;
     font-weight: 600;
+    padding: 2px 0;
     margin-top: 4px;
 }
 
 .product-seller {
+    font-size: 14px;
     display: flex;
     align-items: center;
-    margin-top: 12px;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 
 .product-avatar {
     width: 24px;
+}
+
+.product-date {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #204abd;
 }

@@ -33,10 +33,10 @@ function UploadPage() {
           <TextArea size="large" id="product-description" showCount maxLength={300} placeholder="상품설명을 작성해주세요" />
         </Form.Item>
         <Form.Item>
-					<Button id="submit-button" size="large" htmlType="submit">
-						상품등록하기
-					</Button>
-				</Form.Item>
+          <Button id="submit-button" size="large" htmlType="submit">
+            상품등록하기
+          </Button>
+        </Form.Item>
       </Form>
     </div>
   )
