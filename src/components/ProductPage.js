@@ -1,6 +1,7 @@
 import './ProductPage.css';
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import {API_URL} from "../config/constants";
 import axios from 'axios';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
@@ -11,7 +12,7 @@ function ProductPage() {
     const [product, setProduct] = useState(null);
     const navigate = useNavigate();
     useEffect(() => {
-        let url = `http://localhost:8080/products/${id}`;
+        let url = `${API_URL}/products/${id}`;
         axios
             .get(url)
             .then((result) => {
