@@ -10,7 +10,7 @@ dayjs.extend(relativeTime);
 const MainPage = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        let url = `${API_URL}/products`;
+        let url = `${API_URL}products`;
         axios
             .get(url)
             .then((result) => {

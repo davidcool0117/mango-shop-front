@@ -9,7 +9,7 @@ const UploadPage = () => {
   const [imageUrl, setimageUrl] = useState(null);
   const onFinish = (val) => {
     console.log(val);
-    axios.post(`${API_URL}/products`,{
+    axios.post(`${API_URL}products`,{
       name: val.name,
       description: val.description,
       price: val.price,
@@ -38,10 +38,10 @@ const UploadPage = () => {
       <Form name='uploadForm' onFinish={onFinish}>
 
         <Form.Item name="upload">
-          <Upload name="image" action={`${API_URL}/image`} listType="picture" showUploadList={false} onChange={onChangeImage}>
+          <Upload name="image" action={`${API_URL}image`} listType="picture" showUploadList={false} onChange={onChangeImage}>
 
             {imageUrl ? (
-              <img id="upload-img" src={`${API_URL}/${imageUrl}`} alt=""/>
+              <img id="upload-img" src={`${API_URL}${imageUrl}`} alt=""/>
             ) : (
               <div id="upload-img-placeholder">
                 <img src='/images/icons/camera.png' alt='' />

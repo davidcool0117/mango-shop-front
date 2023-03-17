@@ -12,7 +12,7 @@ function ProductPage() {
     const [product, setProduct] = useState(null);
     const navigate = useNavigate();
     useEffect(() => {
-        let url = `${API_URL}/products/${id}`;
+        let url = `${API_URL}products/${id}`;
         axios
             .get(url)
             .then((result) => {
