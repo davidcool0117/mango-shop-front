@@ -1,1 +1,1 @@
-export const API_URL="http://localhost:8080";
+export const API_URL="https://port-0-mango-shop-server-6g2llfc5jd7p.sel3.cloudtype.app/";
