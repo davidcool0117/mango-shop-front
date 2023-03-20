@@ -1,158 +1,47 @@
-.center {
-  text-align: center;
-  padding: 50px 0 30px 0;
+#back-btn{
+  display:flex;
+  margin:20px auto;
 }
-
-#btn {
-  display: flex;
-  margin: 10px auto;
-  justify-content: center;
-}
-
-#back-btn,
-#home-btn {
-  margin: 0 10px;
-  padding: 5px 10px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-#back-btn:hover,
-#home-btn:hover {
-  cursor: pointer;
-}
-
-#image-box {
-  height: 300px;
-  display: flex;
+#image-box{
+  height:300px;
+  display:flex;
   align-items: center;
   justify-content: center;
 }
-
-#image-box>img {
-  height: 100%;
-  transition: all 0.3s ease;
+#image-box>img{
+  height:100%
 }
-
-#image-box>img:hover {
-  scale: 1.1;
-}
-
-#profile-box {
-  padding: 20px;
+#profile-box{
+  padding:16px;
+  margin:8px 0 0 0;
   border-bottom: 1px solid #e9ecef;
-  display: flex;
+  display:flex;
   align-items: center;
 }
-
-#profile-box>img {
-  width: 30px;
-  height: 30px;
+#profile-box>img{
+  width:30px;
+  height:30px;
 }
-
-#profile-box>span {
-  font-size: 17px;
-  margin-left: 8px;
+#profile-box>span{
+  font-size:15px;
+  margin-left:8px;
+  font-weight:600;
+}
+#contents-box{
+  padding:16px;
+}
+#name{
+  font-size:20px;
+  font-weight:400;
+}
+#price{
+  font-size:16px;
   font-weight: 600;
 }
-
-#contents-box {
-  padding: 13px;
+#createAt{
+  font-size: 12px;
+  color:rgb(204,204,204);
 }
-
-#name {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-#price {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  padding: 50px 0 30px 0;
-}
-
-#btn {
-  display: flex;
-  margin: 10px auto;
-  justify-content: center;
-}
-
-#back-btn,
-#home-btn {
-  margin: 0 10px;
-  padding: 5px 10px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-#back-btn:hover,
-#home-btn:hover {
-  cursor: pointer;
-}
-
-#image-box {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#image-box>img {
-  height: 100%;
-  transition: all 0.3s ease;
-}
-
-#image-box>img:hover {
-  scale: 1.1;
-}
-
-#profile-box {
-  padding: 20px;
-  border-bottom: 1px solid #e9ecef;
-  display: flex;
-  align-items: center;
-}
-
-#profile-box>img {
-  width: 30px;
-  height: 30px;
-}
-
-#profile-box>span {
-  font-size: 17px;
-  margin-left: 8px;
-  font-weight: 600;
-}
-
-#contents-box {
-  padding: 13px;
-}
-
-#name {
-  font-size: 22px;
-  font-weight: 600;
-  padding: 3px;
-}
-
-#price {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 3px;
-}
-
-#createdAt {
-  font-size: 14px;
-  color: rgb(78, 78, 78);
-  padding: 3px;
-}
-
-#description {
+#description{
   margin-top: 16px;
-  font-weight: bold;
-}
-#description {
-  margin-top: 16px;
-  font-weight: bold;
-  padding: 3px;
 }
