@@ -21,7 +21,9 @@ width: 50px;
 font-size: 14px;
 color: rgb(195, 194, 204);
 }
-.upload-name {
+.upload-name,
+.upload-seller,
+.ant-input-number {
 width: 300px;
 }
 #product-description{height:160px;}
