@@ -25,5 +25,6 @@
   "description": "애견용품 쇼핑몰 망고샵",
   "scope": "/",
   "orientation": "portrait",
-  "lang": "ko"
+  "lang": "ko",
+  "dir": "auto"
 }
