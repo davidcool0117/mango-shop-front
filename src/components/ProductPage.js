@@ -40,7 +40,6 @@ const ProductPage = () => {
 			.then((result) => {
 				console.log(result);
 				message.info("결제가 완료되었습니다!")
-				navigate('/', { replace: true });
 				getProduct();
 			})
 			.catch((error) => {
